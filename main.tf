@@ -6,10 +6,7 @@ terraform {
     }
   }
   required_version = ">=0.14.9"
-  backend "gcs" {
-	  bucket = "my-tfstate-bucket"   # GCS bucket name to store terraform tfstate
-	  prefix = "first-app"           # Update to desired prefix name. Prefix name should be unique for each Terraform project having same remote state bucket.
-  }
+
 }
 
 # Specify the GCP Provider
@@ -24,3 +21,4 @@ resource "google_storage_bucket" "tf_bucket" {
   name     = var.bucket_name
   location = var.region
 }
+
