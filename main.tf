@@ -14,7 +14,7 @@ terraform {
 
 # Specify the GCP Provider
 provider "google" {
-  credentials = file("D:\\work\\learn_gcp\\git\\spring-cloud-storage-ex\\src\\main\\resources\\gcp-30032023-d58bfeb6860b.json")
+  credentials = file("D:\\work\\learn_gcp\\git\\spring-cloud-storage-ex\\gcp-30032023-c32fb511ffec.json")
   project     = var.project_id
   region      = var.region
 }
