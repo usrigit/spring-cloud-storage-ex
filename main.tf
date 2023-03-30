@@ -6,10 +6,7 @@ terraform {
     }
   }
   required_version = ">=0.14.9"
-  backend "gcs" {
-	bucket  = "tf_state_storage_gcp2023"
-	prefix  = "terraform/state"
-  }
+
 }
 
 # Specify the GCP Provider
