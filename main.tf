@@ -15,7 +15,7 @@ terraform {
 
 # Specify the GCP Provider
 provider "google" {
-  credentials = file("gcp-30032023-c32fb511ffec.json")
+  credentials = file("gcp-cc.json")
   project     = var.project_id
   region      = var.region
 }
