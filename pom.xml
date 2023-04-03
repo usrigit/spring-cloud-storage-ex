@@ -87,7 +87,7 @@
 				<configuration>
 					<repository>sridocker2023/spring-boot-images</repository>
 					<tag>${project.version}</tag>
-					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
+					<useMavenSettingsForAuth>false</useMavenSettingsForAuth>
 				</configuration>
 				<dependencies>
 					<!-- To make this work on JDK 9+ -->
@@ -98,6 +98,16 @@
 					</dependency>
 				</dependencies>
 			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>com.google.cloud.tools</groupId>-->
+<!--				<artifactId>jib-maven-plugin</artifactId>-->
+<!--				<version>3.3.1</version>-->
+<!--				<configuration>-->
+<!--					<to>-->
+<!--						<image>registry.hub.docker.com/sridocker2023/spring-boot-images</image>-->
+<!--					</to>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 		</plugins>
 		<finalName>spring-boot-images</finalName>
 	</build>
